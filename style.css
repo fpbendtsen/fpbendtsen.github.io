@@ -346,3 +346,51 @@ body.dark-mode .github-btn:hover {
     background-color: #cccccc;
     color: #111;
 }
+/* --- CV Modal Styling --- */
+.modal {
+    display: none; /* Skjult som standard */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8); /* Mørk gennemsigtig baggrund */
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 2% auto;
+    padding: 0;
+    width: 80%;
+    height: 90%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.close-cv {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #333;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.cv-btn {
+    background-color: #e0e0e0;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+/* Dark mode tilpasning til modalen */
+body.dark-mode .modal-content {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .close-cv {
+    color: #fff;
+}
