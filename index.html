@@ -41,6 +41,7 @@
                             <a href="https://www.linkedin.com/in/frederik-panduro-bendtsen-313739240/" target="_blank" class="social-btn linkedin-btn">
                                 LinkedIn
                             </a>
+                            <button id="view-cv-btn" class="social-btn cv-btn">Se CV (Preview)</button>
                         </div>
                     </div>
                 </div>
@@ -73,6 +74,12 @@
             <p>&copy; 2026 Frederik Panduro Bendtsen.</p>
         </footer>
     </div>
+                <div id="cv-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-cv">&times;</span>
+        <iframe src="cv.pdf" width="100%" height="100%" style="border:none;"></iframe>
+    </div>
+</div>
  <script>
     const btn = document.getElementById("theme-btn");
     
@@ -87,6 +94,27 @@
             btn.innerText = "🌙 Mørk";
         }
     });
+     // CV Modal logik
+const cvModal = document.getElementById("cv-modal");
+const cvBtn = document.getElementById("view-cv-btn");
+const closeBtn = document.getElementsByClassName("close-cv")[0];
+
+// Åbn modal når der klikkes på knappen
+cvBtn.onclick = function() {
+    cvModal.style.display = "block";
+}
+
+// Luk modal når der klikkes på (x)
+closeBtn.onclick = function() {
+    cvModal.style.display = "none";
+}
+
+// Luk modal hvis man klikker udenfor selve vinduet
+window.onclick = function(event) {
+    if (event.target == cvModal) {
+        cvModal.style.display = "none";
+    }
+}
 </script>
 </body>
 </html>
