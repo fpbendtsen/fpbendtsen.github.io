@@ -240,3 +240,23 @@ body.dark-mode .theme-toggle {
 body.dark-mode .theme-toggle:hover {
     background-color: #333;
 }
+body.dark-mode .about {
+    background-color: #1e1e1e;
+    border-color: #333;
+}
+
+body.dark-mode .about h2,
+body.dark-mode .about h3,
+body.dark-mode .skills-list strong {
+    color: #ffffff;
+}
+
+body.dark-mode .about-text p,
+body.dark-mode .skills-list li {
+    color: #aaaaaa;
+}
+
+body.dark-mode .skills-list li {
+    background-color: #2a2a2a;
+    border-left-color: #fff;
+}
