@@ -17,7 +17,7 @@
                 <a href="#projekter">Projekter</a>
                 <a href="#om">Om</a>
                 <a href="mailto:frederikpbendtsen@gmail.com">Kontakt</a>
-                <button id="theme-btn" class="theme-toggle">🌙 Mørk</button>
+                <button id="theme-btn" class="theme-toggle">☀️ Lys</button>
             </nav>
         </header>
 
@@ -71,16 +71,21 @@
             <p>&copy; 2026 Frederik Panduro Bendtsen.</p>
         </footer>
     </div>
-    <script>
-        const btn = document.getElementById("theme-btn");
-        btn.addEventListener("click", function() {
-            document.body.classList.toggle("dark-mode");
-            if (document.body.classList.contains("dark-mode")) {
-                btn.innerText = "☀️ Lys";
-            } else {
-                btn.innerText = "🌙 Mørk";
-            }
-        });
-    </script>
+   <script>
+    const btn = document.getElementById("theme-btn");
+    
+    btn.addEventListener("click", function() {
+        // Skifter 'dark-mode' klassen af eller på
+        document.body.classList.toggle("dark-mode");
+        
+        // Hvis siden stadig har 'dark-mode' (er mørk), skal der stå "Lys" på knappen
+        if (document.body.classList.contains("dark-mode")) {
+            btn.innerText = "☀️ Lys";
+        } else {
+            // Hvis klassen er fjernet (siden er lys), skal der stå "Mørk"
+            btn.innerText = "🌙 Mørk";
+        }
+    });
+</script>
 </body>
 </html>
