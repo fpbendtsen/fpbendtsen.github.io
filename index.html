@@ -3,53 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frederik Panduro Bendtsen</title>
+    <title>Portfolio | Frederik Panduro Bendtsen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">IT_Teknolog_</div>
-            <ul>
-                <li><a href="#om">Om Mig</a></li>
-                <li><a href="#projekter">Projekter</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <header>
+            <div class="logo">Frederik Panduro Bendtsen.</div>
+            <nav>
+                <a href="#projekter">Projekter</a>
+                <a href="#om">Om</a>
+                <a href="mailto:din@email.dk">Kontakt</a>
+            </nav>
+        </header>
 
-    <section id="om" class="hero">
-        <h1>Hej, jeg er <span class="highlight">Frederik Panduro Bendtsen</span></h1>
-        <p>Kommende IT Teknolog studerende på EK. Velkommen til mit digitale arbejdsrum.</p>
-    </section>
+        <main>
+            <section class="hero">
+                <h1>IT Teknolog Studerende. <br>Fokus på infrastruktur og kode.</h1>
+                <p>Kommende studerende på EK med en stor interesse for at bygge logiske systemer og netværk. Her samler jeg mine igangværende og afsluttede projekter.</p>
+            </section>
 
-    <section id="projekter">
-        <h2>Mine Projekter</h2>
-        <div class="grid">
-            
-            <div class="card">
-                <h3>Mit Første Script</h3>
-                <p>En kort beskrivelse af noget kode eller en opgave, du har arbejdet på.</p>
-                <a href="#" class="btn">Se koden</a>
-            </div>
+            <section id="projekter" class="projects">
+                <div class="project-card">
+                    <div class="project-info">
+                        <span class="tag">Python</span>
+                        <h2>Nofal Match</h2>
+                        <p>Mit første selvstændige kode-projekt. Et spil udviklet i Python, hvor jeg lærte om loops, logik og problemløsning gennem AI-sparring.</p>
+                        <a href="[Link til din GitHub repo med spillet]" class="link-btn">Se koden på GitHub &rarr;</a>
+                    </div>
+                </div>
 
-            <div class="card">
-                <h3>Netværks Opsætning</h3>
-                <p>Her kan du lægge dokumentation eller noter fra EK op.</p>
-                <a href="#" class="btn">Læs mere</a>
-            </div>
+                </section>
+        </main>
 
-            <div class="card">
-                <h3>Kommende Projekt</h3>
-                <p>Arbejder på noget spændende...</p>
-                <a href="#" class="btn">Kommer snart</a>
-            </div>
-
-        </div>
-    </section>
-
-    <footer id="kontakt">
-        <p>Find mig på <a href="https://github.com/ShiefCteve">GitHub</a> eller <a href="https://www.linkedin.com/in/frederik-panduro-bendtsen-313739240/">LinkedIn</a>.</p>
-    </footer>
+        <footer>
+            <p>&copy; 2026 Frederik Panduro Bendtsen. Bygget fra bunden.</p>
+        </footer>
+    </div>
 </body>
 </html>
