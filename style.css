@@ -66,6 +66,77 @@ nav a:hover {
     max-width: 600px;
     font-weight: 300;
 }
+/* --- Hero indhold (Billede og Tekst) --- */
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* Afstand mellem billede og tekst */
+    margin-bottom: 40px;
+}
+
+.profile-image img {
+    width: 150px; /* Juster størrelsen på dit billede her */
+    height: 150px;
+    object-fit: cover; /* Sikrer at billedet ikke bliver strukket */
+    border-radius: 50%; /* Gør billedet helt rundt */
+    border: 3px solid #111; /* En mørk kant om billedet */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Gør det pænt på mobilen (stabler billede og tekst) */
+@media (max-width: 600px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* --- Sociale Links Knapper --- */
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+@media (max-width: 600px) {
+    .social-links {
+        justify-content: center;
+    }
+}
+
+.social-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+/* GitHub Knap */
+.github-btn {
+    background-color: #24292e; /* Standard GitHub farve */
+    color: #fff;
+    border: 1px solid #24292e;
+}
+
+.github-btn:hover {
+    background-color: #111;
+    color: #fff; /* Sikrer at teksten ikke bliver mørk ved hover */
+}
+
+/* LinkedIn Knap */
+.linkedin-btn {
+    background-color: #0077b5; /* Standard LinkedIn farve */
+    color: #fff;
+    border: 1px solid #0077b5;
+}
+
+.linkedin-btn:hover {
+    background-color: #005582;
+    color: #fff;
+}
 
 /* --- Projekter --- */
 .project-card {
@@ -259,4 +330,19 @@ body.dark-mode .skills-list li {
 body.dark-mode .skills-list li {
     background-color: #2a2a2a;
     border-left-color: #fff;
+}
+/* Dark Mode rettelser for Hero sektionen */
+body.dark-mode .profile-image img {
+    border-color: #fff; /* Gør billedets kant hvid i dark mode */
+}
+
+body.dark-mode .github-btn {
+    background-color: #ffffff;
+    color: #24292e;
+    border-color: #ffffff;
+}
+
+body.dark-mode .github-btn:hover {
+    background-color: #cccccc;
+    color: #111;
 }
